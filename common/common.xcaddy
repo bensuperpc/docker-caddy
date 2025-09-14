@@ -1,0 +1,2 @@
+RUN xcaddy build \
+    --with github.com/mholt/caddy-l4

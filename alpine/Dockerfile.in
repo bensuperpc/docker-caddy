@@ -1,0 +1,8 @@
+ARG BASE_IMAGE=caddy:builder
+FROM ${BASE_IMAGE} AS base
+
+#include "common.xcaddy"
+
+FROM caddy:latest AS final
+
+COPY --from=base /usr/bin/caddy /usr/bin/caddy
