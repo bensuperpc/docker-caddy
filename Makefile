@@ -11,7 +11,7 @@
 #//                                                          //
 #//////////////////////////////////////////////////////////////
 
-SUBDIRS ?= archlinux debian ubuntu alpine
+SUBDIRS ?= alpine
 
 DOCKER_COMPOSITE_SOURCES = common.xcaddy
 
@@ -25,6 +25,8 @@ OUTPUT_IMAGE_REGISTRY ?= docker.io
 OUTPUT_IMAGE_PATH ?= bensuperpc
 OUTPUT_IMAGE_NAME ?= caddy-l4
 OUTPUT_IMAGE_VERSION ?= 2.10-alpine
+
+TAG_WITH_BASE_IMAGE_NAME ?= no
 
 WEB_SITE ?= bensuperpc.org
 
